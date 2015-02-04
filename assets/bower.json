@@ -1,11 +1,11 @@
 {
-  "name": "widgetwareapp-admin",
+  "name": "ba-bolier",
   "version": "0.0.1",
-  "homepage": "https://github.com/widgetware/widgetwareapp-admin",
+  "homepage": "https://github.com/scott-wyatt/ba-bolier",
   "authors": [
     "Scott Wyatt"
   ],
-  "description": "Core for Admin Portal",
+  "description": "My bolier plate for production apps",
   "main": "app.js",
   "license": "MIT",
   "private": true,
