@@ -1,0 +1,72 @@
+<script> 
+<% if (currentUser) { %>
+	var currentUser = <%- JSON.stringify(currentUser) %>;
+	//console.log(currentUser);
+<% } %>
+<% if (currentAccount) { %>
+	var currentAccount = <%- JSON.stringify(currentAccount) %>;
+	//console.log(currentAccount);
+<% } %>
+	var navItems = <%- JSON.stringify(navItems) %>;
+	var wwConfig = <%- JSON.stringify(wwConfig) %>;
+	var isLoggedIn = <%= isLoggedIn %>;
+	var mode = '<%= mode %>';
+</script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+<script>
+	Stripe.setPublishableKey('<%= stripePublish %>'); 
+</script>
+
+<div
+	id="app-container"
+	class="cms-app"
+>
+	<div 
+		ng-controller="SideNavCtrl" 
+		ng-include 
+		src="'app/sidenav/index.tpl.html'"
+	></div>
+	<div 
+		ng-controller="NotificationsCtrl" 
+		ng-include 
+		src="'app/notifications/index.tpl.html'"
+	></div>
+	<div 
+		ng-controller="HeaderCtrl" 
+		ng-include 
+		src="'app/header/index.tpl.html'"
+	></div>
+	<div 
+		class="container"
+		ng-class="{menuOpen: menuOpen, notificationsOpen: notificationsOpen}"
+	>
+
+		<div class="vh row fluid">
+
+			<!-- loadingView is a variable defined in the $rootScope -->
+			<div 
+				class="preloader-container fade"
+				ng-class="{in: loadingView}"
+			>
+                <div class="preloader_1">
+		            <span></span>
+		            <span></span>
+		            <span></span>
+		            <span></span>
+		            <span></span>
+		        </div>
+            </div>
+
+			<div class="vh small-12 medium-10 medium-centered large-centered large-10 columns">
+				<div id="main" class="vh main" ui-view="main">
+				</div><!-- /.main -->
+			</div>
+		</div>
+		<div 
+			ng-controller="FooterCtrl" 
+			ng-include 
+			src="'app/footer/index.tpl.html'"
+		></div>
+	</div><!-- /.container -->
+</div>

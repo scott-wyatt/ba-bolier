@@ -1,0 +1,46 @@
+{
+  "name": "widgetwareapp-admin",
+  "version": "0.0.1",
+  "homepage": "https://github.com/widgetware/widgetwareapp-admin",
+  "authors": [
+    "Scott Wyatt"
+  ],
+  "description": "Core for Admin Portal",
+  "main": "app.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-c3": "~0.0.7",
+    "angular-animate": "~1.3.0",
+    "angular-csv-import": "~0.0.14",
+    "angular-cache": "~3.1.1",
+    "angular-data": "~1.1.0",
+    "angular-filter": "~0.5.1",
+    "angular-foundation": "~0.4.0",
+    "angular-gravatar": "~0.2.2",
+    "angular-lodash": "~0.1.0",
+    "angular-md5": "~0.1.7",
+    "angular-moment": "~0.8.2",
+    "angular-money-directive": "~1.0.2",
+    "angular-payments": "*",
+    "angular-permission": "~0.1.2",
+    "angular-ui-router.stateHelper": "~1.1.0",
+    "angular-ui-router": "~0.2.11",
+    "angular-ui-utils": "~0.1.1",
+    "angularSails": "~0.10.0-pre",
+    "c3": "~0.4.5",
+    "d3": "~3.4.13",
+    "foundation": "~5.4.6",
+    "lodash": "~2.4.1",
+    "ng-idle": "~0.3.5",
+    "angular": "~1.3.8",
+    "ngprogress": "~1.0.7"
+  }
+}

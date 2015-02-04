@@ -1,0 +1,60 @@
+// Default Colors
+$background-color: #fff;
+$primary-color: rgba(42,114,113,1.0);
+$secondary-color: rgba(235,235,236,1.0);
+$tertiary-color: rgba(124,191,182,1.0);
+$tertiary-light-color: lighten(rgba(124,191,182,1.0), 15%);
+
+$yellow: rgba(253,226,33,1.0);
+$lightest-gray: rgba(241,242,242,1.0);
+$medium-gray: rgba(235,235,236,1.0);
+$darkest-gray: rgba(147,149,152,1.0);
+$darkest-black: rgba(0,19,18,1.0);
+$lightest-black: lighten($darkest-black, 5);
+
+$offWhite: #e8e8e8;
+
+//Default Animation Time
+$animationTime: 0.3s !default;
+
+// These control the background color for the table and even rows
+$table-bg: none !default;
+$table-even-row-bg: none !default;
+
+// These control the table cell border style
+$table-border-style: solid;
+$table-border-size: 0px;
+$table-border-color: #ddd;
+
+// These control the table head styles
+$table-head-bg: $tertiary-light-color;
+$table-head-font-size: rem-calc(14);
+$table-head-font-color: $darkest-black;
+//$table-head-font-weight: $font-weight-boldt;
+//$table-head-padding: rem-calc(8 10 10);
+
+// These control the table foot styles
+//$table-foot-bg: $table-head-bg !default;
+//$table-foot-font-size: $table-head-font-size !default;
+$table-foot-font-color: $darkest-black !default;
+//$table-foot-font-weight: $table-head-font-weight !default;
+//$table-foot-padding: $table-head-padding !default;
+
+
+// These control the row padding and font styles
+$table-row-padding: rem-calc(9 10);
+$table-row-font-size: rem-calc(14);
+$table-row-font-color: $darkest-black;
+$table-line-height: rem-calc(18);
+
+// These are for controlling the display and margin of tables
+$table-display: table-cell;
+$table-margin-bottom: rem-calc(20);
+
+
+@mixin rounded($value){
+	-webkit-border-radius: $value;
+	-moz-border-radius: $value;
+	-khtml-border-radius: $value;
+	border-radius: $value;
+}
